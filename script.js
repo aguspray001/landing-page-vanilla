@@ -1,6 +1,6 @@
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop();
-  console.log(wScroll, $('.testimonial').offset());
+  // console.log(wScroll, $('.testimonial').offset());
 
   if(wScroll>$('.working-space-container').offset().top-437 && wScroll<$('.testimonial').offset().top-200){
       $('.working-space-container').addClass('paralax')
@@ -22,3 +22,7 @@ $(window).scroll(function () {
     })
   }
 });
+
+$(document).ready(function(){
+  $('.info-panel').addClass('paralax')
+})
